@@ -1,0 +1,134 @@
+@import "../libs/typography";
+
+.logo {
+  margin: 20px;
+  width: 60px;
+  height: 37.88;
+}
+.header__menu {
+  margin-right: 15px;
+}
+.header__menu--profile img{
+  width: 40px;
+  height: 40px;
+}
+.header__menu--profile p {
+  font-size: $desktop-medium-font-size;
+}
+.header__menu li a {
+  font-size: $mobile-medium-font-size;
+}
+
+.search input {
+  width: 500px;
+  height: 50px;
+  padding: 20px;
+  margin-left: 20px;
+  font-size: $desktop-body-font-size;
+}
+.search a img {
+  width: 35px;
+  height: 35px;
+  margin-right: 20px;
+}
+.employee--card {
+  height: 150px;
+}
+.employee--active {
+  height: 148px;
+}
+.employee__left figure {
+  margin-left: 20px;
+}
+.employee__left figure img {
+  width: 90px;
+  height: 90px;
+}
+.employee__info {
+  margin-left: 20px;
+}
+.employee__info--name {
+  font-size: $desktop-medium-font-size;
+  font-weight: $desktop-xlarge-font-weight;
+}
+.employee__info--position {
+  font-size: $desktop-medium-font-size;
+}
+.employee--card a {
+  font-size: $desktop-medium-font-size;
+  margin-right: 20px;
+}
+.information {
+  max-width: 800px;
+}
+.information__header{
+  margin-top: 50px;
+}
+.information__header figure img {
+  width: 160px;
+  height: 160px;
+}
+.information__header__text {
+  margin-left: 30px;
+}
+.information__header__text h2 {
+  font-size: $desktop-large-font-size;
+  font-weight: $desktop-xlarge-font-weight;
+}
+.information__header__text p {
+  font-size: $desktop-medium-font-size;
+}
+.edit-icon {
+  justify-self: flex-end;
+  width: 30px;
+  height: 30px;
+}
+.information__body > p {
+  font-size: $desktop-large-font-size;
+}
+.body__data {
+  margin-bottom: 25px;
+}
+.body__data--title {
+  font-size: $desktop-medium-font-size;
+  font-weight: $desktop-xlarge-font-weight;
+}
+.body__data--text {
+  font-size: $desktop-body-font-size;
+}
+.add {
+  max-width: 800px;
+}
+.add > h2 {
+  font-size: $desktop-large-font-size;
+  margin-top: 55px;
+  margin-left: 15px;
+}
+
+.add_form div {
+  padding: 15px;
+  margin-bottom: 25px;
+}
+.add_form div label {
+  font-size: $desktop-body-font-size;
+  font-weight: $desktop-xlarge-font-weight;
+}
+.add_form div input {
+  height: 30px;
+}
+.add_form input[type="submit"] {
+  width: 120px;
+  height: 45px;
+  font-size: $desktop-button-font-size;
+  font-weight: $desktop-button-font-weight;
+  border-radius: 20px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+footer {
+  font-size: $desktop-body-font-size;
+}
+footer ul li a {
+  font-size: $desktop-medium-font-size;
+}

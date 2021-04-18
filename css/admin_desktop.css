@@ -1,0 +1,181 @@
+/* -------------------- *\
+|        $DESKTOP        |
+\* -------------------- */
+/*-----Display x large*/
+/*-----Display large*/
+/*-----Display medium*/
+/*-----Display small*/
+/*-----Button*/
+/*-----Body*/
+/* -------------------- *\
+|        $MOBILE         |
+\* -------------------- */
+/*-----Display x large*/
+/*-----Display large*/
+/*-----Display medium*/
+/*-----Display small*/
+/*-----Button*/
+/*-----Body*/
+.logo {
+  margin: 20px;
+  width: 60px;
+  height: 37.88;
+}
+
+.header__menu {
+  margin-right: 15px;
+}
+
+.header__menu--profile img {
+  width: 40px;
+  height: 40px;
+}
+
+.header__menu--profile p {
+  font-size: 21px;
+}
+
+.header__menu li a {
+  font-size: 16px;
+}
+
+.search input {
+  width: 500px;
+  height: 50px;
+  padding: 20px;
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+.search a img {
+  width: 35px;
+  height: 35px;
+  margin-right: 20px;
+}
+
+.employee--card {
+  height: 150px;
+}
+
+.employee--active {
+  height: 148px;
+}
+
+.employee__left figure {
+  margin-left: 20px;
+}
+
+.employee__left figure img {
+  width: 90px;
+  height: 90px;
+}
+
+.employee__info {
+  margin-left: 20px;
+}
+
+.employee__info--name {
+  font-size: 21px;
+  font-weight: 600;
+}
+
+.employee__info--position {
+  font-size: 21px;
+}
+
+.employee--card a {
+  font-size: 21px;
+  margin-right: 20px;
+}
+
+.information {
+  max-width: 800px;
+}
+
+.information__header {
+  margin-top: 50px;
+}
+
+.information__header figure img {
+  width: 160px;
+  height: 160px;
+}
+
+.information__header__text {
+  margin-left: 30px;
+}
+
+.information__header__text h2 {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.information__header__text p {
+  font-size: 21px;
+}
+
+.edit-icon {
+  justify-self: flex-end;
+  width: 30px;
+  height: 30px;
+}
+
+.information__body > p {
+  font-size: 26px;
+}
+
+.body__data {
+  margin-bottom: 25px;
+}
+
+.body__data--title {
+  font-size: 21px;
+  font-weight: 600;
+}
+
+.body__data--text {
+  font-size: 16px;
+}
+
+.add {
+  max-width: 800px;
+}
+
+.add > h2 {
+  font-size: 26px;
+  margin-top: 55px;
+  margin-left: 15px;
+}
+
+.add_form div {
+  padding: 15px;
+  margin-bottom: 25px;
+}
+
+.add_form div label {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.add_form div input {
+  height: 30px;
+}
+
+.add_form input[type="submit"] {
+  width: 120px;
+  height: 45px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 20px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+footer {
+  font-size: 16px;
+}
+
+footer ul li a {
+  font-size: 21px;
+}
+/*# sourceMappingURL=admin_desktop.css.map */

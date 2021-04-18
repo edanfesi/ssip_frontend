@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/reset.css">
   <link rel="stylesheet" href="../css/admin.css">
+  <link rel="stylesheet" href="../css/admin_desktop.css" media="(min-width: 1000px)" />
   <title>Dashboard</title>
 </head>
 <body>
@@ -18,7 +19,8 @@
       </div>
       <ul>
         <li><a href="#">Profile</a></li>
-        <li><a href="#">Log out</a></li>
+        <li><a href="#">Settings</a></li>
+        <li><a href="../login/index.html">Log out</a></li>
       </ul>
     </div>
   </header>
@@ -104,8 +106,52 @@
           </div>
         </div>
       </div>
+    </section>
+    <section class="add__container" id="add__container">
+      <div class="add add-close" id="add">
+        <p class="close" id="close-add">X</p>
+        <h2>Add new employee</h2>
+        <form action="" class="add_form">
+          <div>
+            <label>Name</label>
+            <input type="text" class="name_input" id="name" placeholder="Name..." required>
+          </div>
 
+          <div>
+            <label>Last name</label>
+            <input type="text" class="name_input" id="last_name" placeholder="Last name..." required>
+          </div>
+
+          <div>
+            <label>Department</label>
+            <input type="text" class="name_input" id="department" placeholder="Department..." required>
+          </div>
+
+          <div>
+            <label>Position</label>
+            <input type="text" class="name_input" id="position" placeholder="Position..." required>
+          </div>
+
+          <div>
+            <label>Password</label>
+            <input type="text" class="name_input" id="password" placeholder="Password" required>
+          </div>
+
+          <div>
+            <label>Entry date</label>
+            <input type="date" class="name_input" id="Entry_date" required>
+          </div>
+          <input type="submit" value="Add" >
+        </form>
+      </div>
+    </section>
   </main>
+  <footer>
+    <ul class="footer-nav">
+      <li><a href="#">Terms and services</a></li>
+      <li><a href="#">Policy and privacity</a></li>
+    </ul>
+  </footer>
   <script src="./index.js"></script>
 </body>
 </html>

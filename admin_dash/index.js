@@ -23,3 +23,18 @@ closeInformation.addEventListener("click", (e) => {
     informationC.style.visibility = "hidden"
   }, 600)
 })
+
+openAdd.addEventListener("click", (e) => {
+  e.preventDefault();
+  addC.style.opacity = "1"
+  addC.style.visibility = "visible"
+  add.classList.toggle("add-close")
+})
+
+closeAdd.addEventListener("click", (e) => {
+  add.classList.toggle("add-close")
+  setTimeout(() => {
+    addC.style.opacity = "0"
+    addC.style.visibility = "hidden"
+  }, 600)
+})

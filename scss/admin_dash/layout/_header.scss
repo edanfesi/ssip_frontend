@@ -8,10 +8,8 @@
 .logo {
   margin: 10px;
   width: 45px;
-  height: 35px;
+  height: 37.89px;
 }
-
-
 .header__menu--profile {
   display: flex;
   margin-right: 10px;
@@ -23,6 +21,7 @@
 
 .header__menu--profile img {
   width: 30px;
+  height: 30px;
   margin-top: 5px;
 }
 
@@ -50,6 +49,7 @@
 
 .header__menu li a {
   text-decoration: none;
+  color: #008cff;
 }
 
 .header__menu li a:hover {
