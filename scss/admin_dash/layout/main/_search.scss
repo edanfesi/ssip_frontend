@@ -1,0 +1,22 @@
+.search {
+  display: flex;
+  width: 100%;
+  margin-top: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+.search input {
+  width: 150px;
+  height: 35px;
+  padding: 10px;
+  margin-left: 10px;
+  outline: none;
+  border: 1px solid #C5C5C5;
+  border-radius: 20px;
+}
+.search a {
+  margin-right: 10px;
+}
+.search a img {
+  height: 20px;
+}

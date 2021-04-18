@@ -17,12 +17,95 @@
         <p>Perfil</p>
       </div>
       <ul>
-        <li><a href="/">Profile</a></li>
-        <li><a href="/">Log out</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Log out</a></li>
       </ul>
     </div>
   </header>
   <main>
+    <section class="search">
+      <form action="">
+        <input type="search" placeholder="Search...">
+      </form>
+      <a href=""><img src="/assets/plus-icon.png" alt="plus-icon" id="add-employee"></a>
+    </section>
+    <section class="employees">
+      <div class="employee--card">
+        <div class="employee__left">
+          <div class="employee--active"></div>
+          <figure><img src="/assets/person-profile.jpeg" alt="Employee picture"></figure>
+          <div class="employee__info">
+            <p class="employee__info--name">Andrea Rios</p>
+            <p class="employee__info--position">ui/ux</p>
+          </div>
+        </div>
+        <a href="#" class="view" id="view-information">View</a>
+      </div>
+    </section>
+    <section class="information__container" id="information__container">
+      <div class="information information-close" id="information">
+        <p class="close" id="close-information">X</p>
+        <div class="information__header">
+          <figure>
+            <img src="/assets/person-profile.jpeg" alt="Employee picture">
+          </figure>
+          <div class="information__header__text">
+            <h2>Andrea Rios</h2>
+            <p>UI/UX</p>
+          </div>
+        </div>
+        <div class="information__body">
+          <p>information</p>
+          <div class="body__data">
+            <p class="body__data--title">ID:</p>
+            <p class="body__data--text">12345</p>
+          </div>
+
+          <div class="body__data">
+            <p class="body__data--title">Fullname:</p>
+            <p class="body__data--text">Andrea Rios</p>
+            <img src="/assets/edit-icon.png" alt="Edit icon" class="edit-icon">
+          </div>
+
+          <div class="body__data">
+            <p class="body__data--title">Department:</p>
+            <p class="body__data--text">Industry</p>
+            <img src="/assets/edit-icon.png" alt="Edit icon" class="edit-icon">
+          </div>
+
+          <div class="body__data">
+            <p class="body__data--title">Position:</p>
+            <p class="body__data--text">UI/UX</p>
+            <img src="/assets/edit-icon.png" alt="Edit icon" class="edit-icon">
+          </div>
+
+          <div class="body__data">
+            <p class="body__data--title">Password:</p>
+            <p class="body__data--text">982345</p>
+            <img src="/assets/edit-icon.png" alt="Edit icon" class="edit-icon">
+          </div>
+
+          <div class="body__data">
+            <p class="body__data--title">Entry date:</p>
+            <p class="body__data--text">09/07/2003</p>
+            <img src="/assets/edit-icon.png" alt="Edit icon" class="edit-icon">
+          </div>
+
+          <div class="body__data">
+            <p class="body__data--title">Modification date:</p>
+            <p class="body__data--text">09/07/2003</p>
+            <img src="/assets/edit-icon.png" alt="Edit icon" class="edit-icon">
+          </div>
+
+          <div class="body__data">
+            <p class="body__data--title">Status:</p>
+            <p class="body__data--text">Active</p>
+            <img src="/assets/edit-icon.png" alt="Edit icon" class="edit-icon">
+          </div>
+        </div>
+      </div>
+
   </main>
+  <script src="./index.js"></script>
 </body>
 </html>
