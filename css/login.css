@@ -116,7 +116,7 @@ main figure {
 
 .login__remember span {
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .login-form input[type="submit"] {
@@ -134,7 +134,7 @@ main figure {
 
 .login-form a {
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 300;
   text-decoration: underline;
   color: #008cff;
 }

@@ -16,77 +16,81 @@
 /*-----Display small*/
 /*-----Button*/
 /*-----Body*/
-.header {
+header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  height: 10vh;
+  height: auto;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.logo {
-  margin: 10px;
-  width: 45px;
-  height: 37.89px;
-}
-
-.header__menu--profile {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: 10px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  cursor: pointer;
 }
 
-.header__menu--profile img {
-  width: 30px;
-  height: 30px;
+.logo {
+  margin: 10px;
+  width: 40px;
+  height: 34.89px;
+}
+
+.header__user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__user figure img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+
+.header__user__body {
   margin-top: 5px;
-}
-
-.header__menu ul {
-  display: none;
-  position: absolute;
-  width: 100px;
-  margin: 0px 0px 0px -60px;
-  padding: 0px;
-  background-color: white;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  -webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
-  border-radius: 10px;
   text-align: center;
-  list-style: none;
 }
 
-.header__menu:hover ul, ul:hover {
-  display: block;
+.header__user__body h2 {
+  font-size: 21px;
 }
 
-.header__menu li {
-  margin: 10px 0px;
+.header__user__body p {
+  font-size: 16px;
+  font-weight: 100;
 }
 
-.header__menu li a {
-  text-decoration: none;
-  color: #008cff;
+.header__user--icons {
+  margin: 15px 0;
 }
 
-.header__menu li a:hover {
-  text-decoration: underline;
+.header__user--icons figure {
+  padding: 4px;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-color: #E2E2E2;
+  border-radius: 50%;
+}
+
+.header__user--icons figure img {
+  width: 18px;
+  height: 18px;
 }
 
 .search {
@@ -103,23 +107,25 @@
           align-items: center;
 }
 
+.search--title {
+  font-size: 21px;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.search form {
+  width: 50%;
+  text-align: end;
+}
+
 .search input {
-  width: 150px;
+  width: 90%;
   height: 35px;
   padding: 10px;
-  margin-left: 10px;
-  outline: none;
-  border: 1px solid #C5C5C5;
-  border-radius: 20px;
-}
-
-.search a {
   margin-right: 10px;
-}
-
-.search a img {
-  height: 25px;
-  width: 25px;
+  outline: none;
+  border: 1px solid #E5E5E5;
+  border-radius: 20px;
 }
 
 .employees {
@@ -152,14 +158,19 @@
           align-items: center;
 }
 
-.employee--active {
-  width: 10px;
-  height: 68px;
-  background-color: #00AC26;
+.employee__left figure {
+  position: relative;
+  margin-left: 10px;
 }
 
-.employee__left figure {
-  margin-left: 10px;
+figure .employee--active {
+  position: absolute;
+  bottom: 6px;
+  right: 3px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #00AC26;
 }
 
 .employee__left figure img {
@@ -179,6 +190,7 @@
 
 .employee__info--position {
   font-size: 14px;
+  font-weight: 400;
 }
 
 .employee--card a {
@@ -188,7 +200,7 @@
   color: #008cff;
 }
 
-.information__container, .add__container {
+.add__container {
   opacity: 0;
   visibility: hidden;
   display: -webkit-box;
@@ -209,12 +221,12 @@
   height: 100%;
 }
 
-.information, .add {
+.add {
   position: relative;
   width: 95%;
   height: auto;
   background-color: white;
-  border: 1px solid #C5C5C5;
+  border: 1px solid #E5E5E5;
   border-radius: 10px;
   -webkit-transition: -webkit-transform 1s;
   transition: -webkit-transform 1s;
@@ -224,7 +236,7 @@
           transform: translateY(0%);
 }
 
-.information-close, .add-close {
+.add-close {
   -webkit-transform: translateY(-200%);
           transform: translateY(-200%);
 }
@@ -240,74 +252,6 @@
   top: 10px;
   left: 15px;
   cursor: pointer;
-}
-
-.information__header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  width: 100%;
-  height: 35%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 40px;
-}
-
-.information__header figure {
-  margin-left: 10px;
-}
-
-.information__header figure img {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-}
-
-.information__header__text {
-  margin-left: 15px;
-}
-
-.information__header__text h2 {
-  font-size: 21px;
-  font-weight: 600;
-}
-
-.information__header__text p {
-  font-size: 16px;
-}
-
-.edit-icon {
-  width: 20px;
-  height: 20px;
-}
-
-.information__body {
-  padding: 10px;
-}
-
-.information__body > p {
-  font-size: 21px;
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.body__data {
-  margin-bottom: 15px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 4fr 4fr 1fr;
-      grid-template-columns: 4fr 4fr 1fr;
-}
-
-.body__data--title {
-  font-size: 16px;
-  font-weight: 600;
-}
-
-.body__data--text {
-  font-size: 14px;
 }
 
 .add > h2 {
@@ -377,9 +321,6 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: absolute;
-  bottom: 0;
-  left: 0;
   width: 100%;
   height: 10vh;
   -ms-flex-pack: distribute;
@@ -389,7 +330,6 @@ footer {
           align-items: center;
   font-size: 14px;
   background-color: #3b3b3b;
-  margin: 0 auto;
 }
 
 footer ul li {
@@ -401,5 +341,13 @@ footer ul li a {
   text-decoration: underline;
   color: white;
   margin-left: 10px;
+}
+
+footer ul li a:hover {
+  text-decoration: underline;
+}
+
+.employees {
+  height: 110vh;
 }
 /*# sourceMappingURL=admin.css.map */

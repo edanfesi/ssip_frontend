@@ -1,0 +1,54 @@
+/* -------------------- *\
+|        $DESKTOP        |
+\* -------------------- */
+/*-----Display x large*/
+/*-----Display large*/
+/*-----Display medium*/
+/*-----Display small*/
+/*-----Button*/
+/*-----Body*/
+/* -------------------- *\
+|        $MOBILE         |
+\* -------------------- */
+/*-----Display x large*/
+/*-----Display large*/
+/*-----Display medium*/
+/*-----Display small*/
+/*-----Button*/
+/*-----Body*/
+main > h2 {
+  position: absolute;
+  top: 100px;
+  left: 0px;
+  font-size: 35px;
+}
+
+.information__header {
+  background: none;
+  margin: 0;
+}
+
+.information__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: none;
+}
+
+.information__body > img {
+  width: 30px;
+  height: 30px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+}
+/*# sourceMappingURL=information_desktop.css.map */

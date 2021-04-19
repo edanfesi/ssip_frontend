@@ -19,7 +19,31 @@
 .logo {
   margin: 20px;
   width: 60px;
-  height: 37.88;
+  height: 37.88px;
+}
+
+.header__user .header__user--profile {
+  width: 200px;
+  height: 200px;
+}
+
+.header__user__body h2 {
+  font-size: 26px;
+}
+
+.header__user__body p {
+  font-size: 21px;
+}
+
+.header__user--icons figure {
+  padding: 6px;
+  width: 40px;
+  height: 40px;
+}
+
+.header__user--icons figure img {
+  width: 30px;
+  height: 30px;
 }
 
 .header__menu {
@@ -27,8 +51,8 @@
 }
 
 .header__menu--profile img {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
 }
 
 .header__menu--profile p {
@@ -37,6 +61,11 @@
 
 .header__menu li a {
   font-size: 16px;
+}
+
+.search--title {
+  font-size: 26px;
+  margin-left: 20px;
 }
 
 .search input {
@@ -66,8 +95,15 @@
 }
 
 .employee__left figure img {
-  width: 90px;
-  height: 90px;
+  width: 100px;
+  height: 100px;
+}
+
+figure .employee--active {
+  bottom: 8px;
+  right: 4px;
+  width: 20px;
+  height: 20px;
 }
 
 .employee__info {

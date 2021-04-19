@@ -1,0 +1,98 @@
+/* -------------------- *\
+|        $DESKTOP        |
+\* -------------------- */
+/*-----Display x large*/
+/*-----Display large*/
+/*-----Display medium*/
+/*-----Display small*/
+/*-----Button*/
+/*-----Body*/
+/* -------------------- *\
+|        $MOBILE         |
+\* -------------------- */
+/*-----Display x large*/
+/*-----Display large*/
+/*-----Display medium*/
+/*-----Display small*/
+/*-----Button*/
+/*-----Body*/
+.logo {
+  margin: 20px;
+  width: 60px;
+  height: 37.88px;
+}
+
+main > h2 {
+  margin-left: 20px;
+}
+
+.information {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 20px;
+  min-height: 80vh;
+}
+
+.information__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 450px;
+  padding: 10px 0;
+  border: none;
+}
+
+.information__header figure {
+  margin-bottom: 20px;
+}
+
+.information__header figure img {
+  width: 200px;
+  height: 200px;
+}
+
+.information__header__text {
+  margin-left: 25px;
+}
+
+.information__header__text h2 {
+  font-size: 35px;
+  font-weight: 500;
+}
+
+.information__header__text p {
+  font-size: 21px;
+  text-align: center;
+}
+
+.information__body {
+  margin: 0;
+  min-height: 450px;
+  margin-left: 15px;
+}
+
+.information__body > p {
+  font-size: 16px;
+}
+
+.body__data--title {
+  font-size: 21px;
+  font-weight: 600;
+}
+
+.body__data--text {
+  font-size: 21px;
+}
+
+footer ul li a {
+  font-size: 21px;
+  margin-left: 20px;
+}
+/*# sourceMappingURL=information_tablet.css.map */

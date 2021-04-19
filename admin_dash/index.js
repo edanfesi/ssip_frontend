@@ -1,28 +1,23 @@
-const closeInformation = document.getElementById("close-information");
-const openInformation = document.getElementById("view-information");
-const information = document.getElementById("information");
-const informationC = document.getElementById("information__container");
-
 const openAdd = document.getElementById("add-employee");
 const closeAdd = document.getElementById("close-add");
 const add = document.getElementById("add");
 const addC = document.getElementById("add__container");
 
+const employeeList = document.getElementById("employee_list")
+const dataAddNode = document.querySelectorAll("#add_form input")
+const dataAdd = [...dataAddNode]
+const addEmployee = document.getElementById('btn-add')
 
-openInformation.addEventListener("click", (e) => {
-  e.preventDefault();
-  informationC.style.opacity = "1"
-  informationC.style.visibility = "visible"
-  information.classList.toggle("information-close")
-})
-
-closeInformation.addEventListener("click", (e) => {
-  information.classList.toggle("information-close")
-  setTimeout(() => {
-    informationC.style.opacity = "0"
-    informationC.style.visibility = "hidden"
-  }, 600)
-})
+function addNewEmployee (e) {
+  e.preventDefault()
+  let createDiv = document.createElement('div')
+  let newCard = employeeList.appendChild(createDiv)
+  newCard.setAttribute("class", "employee--card")
+  let createleft = newCard.appendChild(createDiv)
+  createleft.setAttribute("class", "employee__left")
+  let createActive = createleft.appendChild(createDiv)
+  createActive.setAttribute("class", "employee--active")
+}
 
 openAdd.addEventListener("click", (e) => {
   e.preventDefault();
@@ -38,3 +33,5 @@ closeAdd.addEventListener("click", (e) => {
     addC.style.visibility = "hidden"
   }, 600)
 })
+
+addEmployee.addEventListener("click", addNewEmployee);
