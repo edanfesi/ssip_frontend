@@ -33,7 +33,7 @@ main figure {
 }
 .login--title {
   font-size: $mobile-xlarge-font-size;
-  color: #008cff;
+  color: $principal-color;
   margin-bottom: 10px;
 }
 .login--text {
@@ -74,7 +74,7 @@ main figure {
   margin: 0 auto;
   border: none;
   border-radius: 15px;
-  background-color: #008cff;
+  background-color: $principal-color;
   color: white;
   outline: none;
   margin-bottom: 20px;
@@ -83,5 +83,5 @@ main figure {
   font-size: $mobile-body-font-size;
   font-weight: $mobile-body-font-weight;
   text-decoration: underline;
-  color: #008cff;
+  color: $principal-color;
 }

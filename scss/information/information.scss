@@ -1,0 +1,113 @@
+@import "../libs/colors";
+@import "../libs/typography";
+
+body {
+  background-color: $surface-color;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.logo {
+  margin: 10px;
+  width: 40px;
+  height: 34.89px;
+}
+.information {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  min-height: 80vh;
+}
+main > h2 {
+  margin-left: 10px;
+}
+.information__header {
+  display: flex;
+  width: 95%;
+  height: 35%;
+  padding: 15px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  background-color: white;
+  margin-bottom: 15px;
+  border-radius: 20px;
+}
+
+.information__header figure img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+.information__header__text {
+  margin-left: 15px;
+}
+.information__header__text h2 {
+  font-size: $mobile-xlarge-font-size;
+  font-weight: $mobile-large-font-weight;
+}
+.information__header__text p {
+  font-size: $mobile-medium-font-size;
+}
+.information__body {
+  position: relative;
+  width: 95%;
+  padding: 15px;
+  padding-top: 25px;
+  margin-bottom: 30px;
+  background-color: white;
+  border-radius: 20px;
+}
+.information__body > img {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.information__body > p {
+  font-size:  $mobile-body-font-size;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.body__data {
+  margin-bottom: 15px;
+  display: grid;
+  grid-template-columns:1fr 1fr;
+}
+.body__data--title {
+  font-size: $mobile-medium-font-size;
+  font-weight: $mobile-xlarge-font-weight;
+}
+.body__data--text {
+  font-size: $mobile-medium-font-size;
+}
+footer {
+  display: flex;
+  width: 100%;
+  height: 10vh;
+  justify-content: space-around;
+  align-items: center;
+  font-size: $mobile-medium-font-size;
+  background-color: $footer-color;
+}
+footer ul li {
+  display: inline-block;
+}
+footer ul li a {
+  font-size: $mobile-body-font-size;
+  text-decoration: none;
+  color: white;
+  margin-left: 10px;
+}
+footer ul li a:hover {
+  text-decoration: underline;
+}

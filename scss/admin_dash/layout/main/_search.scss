@@ -1,0 +1,27 @@
+.search {
+  display: flex;
+  width: 100%;
+  margin-top: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+.search--title {
+  font-size: $desktop-medium-font-size;
+  font-weight: $mobile-xlarge-font-weight;
+  margin-left: 10px;
+
+}
+.search form {
+  width: 50%;
+  text-align: end;
+
+}
+.search input {
+  width: 90%;
+  height: 35px;
+  padding: 10px;
+  margin-right: 10px;
+  outline: none;
+  border: 1px solid $border-color;
+  border-radius: 20px;
+}

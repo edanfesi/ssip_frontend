@@ -1,0 +1,53 @@
+.employees {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+.employee--card {
+  display: flex;
+  width: 100%;
+  height: 70px;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid $border-color;
+}
+.employee__left {
+  display: flex;
+  align-items: center;
+}
+
+.employee__left figure {
+  position: relative;
+  margin-left: 10px;
+}
+figure .employee--active {
+  position: absolute;
+  bottom: 6px;
+  right: 3px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: $success;
+}
+.employee__left figure img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.employee__info {
+  margin-left: 15px;
+}
+.employee__info--name {
+  font-size: $mobile-medium-font-size;
+  font-weight: $mobile-xlarge-font-weight;
+}
+.employee__info--position {
+  font-size: $mobile-body-font-size;
+  font-weight: $desktop-small-font-weight;
+}
+.employee--card a {
+  font-size: $mobile-medium-font-size;
+  margin-right: 10px;
+  text-decoration: none;
+  color: $principal-color;
+}
