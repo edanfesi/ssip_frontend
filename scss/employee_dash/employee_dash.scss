@@ -55,6 +55,9 @@ header {
   font-size: $mobile-large-font-size;
   margin-bottom: 5px;
 }
+.logged-in--time {
+  font-size: $mobile-medium-font-size;
+}
 footer {
   display: flex;
   width: 100%;

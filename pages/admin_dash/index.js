@@ -7,11 +7,6 @@ const dataAddNode = document.querySelectorAll("#add_form input")
 const dataAdd = [...dataAddNode]
 const addEmployee = document.getElementById('btn-add')
 
-
-
-
-
-
 function addNewEmployee (e) {
   e.preventDefault()
 
