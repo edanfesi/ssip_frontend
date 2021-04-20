@@ -1,0 +1,41 @@
+.header__user {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.header__user figure img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+.header__user__body {
+  margin-top: 5px;
+  text-align: center;
+}
+.header__user__body h2 {
+  font-size: $mobile-large-font-size;
+}
+.header__user__body p {
+  font-size: $mobile-medium-font-size;
+  font-weight: $mobile-small-font-weight;
+}
+
+.header__user--icons {
+  margin: 15px 0;
+}
+.header__user--icons figure {
+  padding: 4px;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-color: #E2E2E2;
+  border-radius: 50%;
+}
+.header__user--icons figure img {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}

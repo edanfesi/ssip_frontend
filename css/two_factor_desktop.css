@@ -1,0 +1,85 @@
+/* -------------------- *\
+|        $DESKTOP        |
+\* -------------------- */
+/*-----Display x large*/
+/*-----Display large*/
+/*-----Display medium*/
+/*-----Display small*/
+/*-----Button*/
+/*-----Body*/
+/* -------------------- *\
+|        $MOBILE         |
+\* -------------------- */
+/*-----Display x large*/
+/*-----Display large*/
+/*-----Display medium*/
+/*-----Display small*/
+/*-----Button*/
+/*-----Body*/
+main {
+  width: 100%;
+  height: 100vh;
+}
+
+.logo {
+  display: block;
+  margin: 10px 15px;
+}
+
+.two-factor {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  max-width: 550px;
+  height: 650px;
+  padding: 30px 20px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.two-factor--title {
+  font-size: 21px;
+  font-weight: 500;
+}
+
+.two-factor__input p {
+  font-size: 16px;
+}
+
+.two-factor__input--image {
+  width: 160px;
+  height: 118.1px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.phone-form {
+  padding-bottom: 60px;
+  height: 150px;
+}
+
+.phone-form input {
+  font-size: 21px;
+  width: 60px;
+  height: 60px;
+}
+
+.phone-form input:hover {
+  border: 1px solid #818080;
+}
+
+.phone-form input:focus {
+  width: 65px;
+  height: 65px;
+  border: none;
+}
+
+.two-factor input[type="submit"] {
+  font-size: 16px;
+  font-weight: 400;
+  width: 200px;
+  height: 50px;
+}
+/*# sourceMappingURL=two_factor_desktop.css.map */

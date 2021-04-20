@@ -1,0 +1,94 @@
+main, .login-form {
+  width: 100%;
+  height: 90vh;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main figure {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 10px;
+}
+.logo {
+  width: 40px;
+  height: auto;
+}
+.login {
+  display: flex;
+  width: 80%;
+  height: 80%;
+  max-width: 550px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+.login--title {
+  font-size: $mobile-xlarge-font-size;
+  color: $principal-color;
+  margin-bottom: 10px;
+}
+.login--text {
+  margin-bottom: 30px;
+}
+.login__card, .login__remember {
+  margin-bottom: 20px;
+}
+.login__card:nth-child(2) {
+  margin-bottom: 10px;
+}
+.login__card p {
+  font-size: $mobile-small-font-size;
+  padding-bottom: 5px;
+  font-weight: $mobile-xlarge-font-weight;
+}
+.login__card input {
+  width: 100%;
+  height: 45px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  outline: none;
+  transition: 300ms;
+}
+.login__card input:hover {
+  border: 2px solid $principal-color;
+}
+.login__remember input{
+  width: 15px;
+  height: 15px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.login__remember span {
+  font-size: $mobile-body-font-size;
+  font-weight: $mobile-body-font-weight;
+
+}
+.login-form input[type="submit"] {
+  width: 50%;
+  height: 35px;
+  font-size: $mobile-body-font-size;
+  margin: 0 auto;
+  border-radius: 15px;
+  border: none;
+  background-color: $principal-color;
+  color: white;
+  outline: none;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.login-form input[type="submit"]:hover {
+  background-color: white;
+  color: $principal-color;
+  border: 1px solid $principal-color;
+}
