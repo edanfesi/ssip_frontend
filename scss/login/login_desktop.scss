@@ -1,6 +1,6 @@
 @import '../libs/typography';
 .login {
-  height: 70vh;
+  height: 65vh;
   padding: 0px 30px;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
@@ -41,7 +41,7 @@
 .login-form input[type="submit"] {
   height: 40px;
   font-size: $desktop-medium-font-size;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 
 .login-form a {

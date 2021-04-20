@@ -91,6 +91,7 @@ header {
 .header__user--icons figure img {
   width: 18px;
   height: 18px;
+  cursor: pointer;
 }
 
 .search {
@@ -126,6 +127,12 @@ header {
   outline: none;
   border: 1px solid #E5E5E5;
   border-radius: 20px;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.search input:hover {
+  border: 2px solid #008cff;
 }
 
 .employees {
@@ -198,6 +205,11 @@ figure .employee--active {
   margin-right: 10px;
   text-decoration: none;
   color: #008cff;
+  cursor: pointer;
+}
+
+.employee--card a:hover {
+  text-decoration: underline;
 }
 
 .add__container {

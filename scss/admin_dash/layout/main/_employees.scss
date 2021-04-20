@@ -50,4 +50,8 @@ figure .employee--active {
   margin-right: 10px;
   text-decoration: none;
   color: $principal-color;
+  cursor: pointer;
+}
+.employee--card a:hover {
+  text-decoration: underline;
 }

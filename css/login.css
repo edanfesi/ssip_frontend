@@ -106,12 +106,19 @@ main figure {
   border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0.3);
   outline: none;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.login__card input:hover {
+  border: 2px solid #008cff;
 }
 
 .login__remember input {
   width: 15px;
   height: 15px;
   margin-left: 5px;
+  cursor: pointer;
 }
 
 .login__remember span {
@@ -124,19 +131,19 @@ main figure {
   height: 35px;
   font-size: 14px;
   margin: 0 auto;
-  border: none;
   border-radius: 15px;
+  border: none;
   background-color: #008cff;
   color: white;
   outline: none;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  cursor: pointer;
 }
 
-.login-form a {
-  font-size: 14px;
-  font-weight: 300;
-  text-decoration: underline;
+.login-form input[type="submit"]:hover {
+  background-color: white;
   color: #008cff;
+  border: 1px solid #008cff;
 }
 
 footer {
