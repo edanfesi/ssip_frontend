@@ -17,3 +17,5 @@
 
     let temporizador = new Temporizador('temporizador', 40, 0);
     temporizador.conteoSegundos();
+
+const 

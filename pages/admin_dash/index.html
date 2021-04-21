@@ -28,30 +28,77 @@
         <figure id="add-employee">
           <img src="/assets/add-employee-icon.png"  alt="add employee icon">
         </figure>
-        <figure>
-          <img src="/assets/edit-icon.png" alt="edit user icon">
-        </figure>
       </div>
     </div>
     <section class="search">
       <p class="search--title">Users</p>
       <form action="">
-        <input type="search" placeholder="Search...">
+        <input type="search" placeholder="Search..." id="inputSearch" class="inputSearch">
       </form>
     </section>
     <section class="employees" id="employee_list">
-      <div class="employee--card">
-        <div class="employee__left">
+    </section>
+    <section class="information__container" id="information__container">
+      <div class="information information-close" id="information">
+        <p class="close" id="close-information">X</p>
+        <div class="information__header">
           <figure>
             <img src="/assets/person-profile.jpeg" alt="Employee picture">
-            <div class="employee--active"></div>
           </figure>
-          <div class="employee__info">
-            <p class="employee__info--name">Andrea Rios</p>
-            <p class="employee__info--position">ui/ux</p>
+          <div class="information__header__text">
+            <h2>Andrea Rios</h2>
+            <p>UI/UX</p>
           </div>
         </div>
-        <a href="../information/index.html" class="view" id="view-information">View</a>
+        <div class="information__body" id="information__body">
+          <p>information</p>
+          <div class="body__data">
+            <p class="body__data--title">ID:</p>
+            <p class="body__data--text">12345</p>
+          </div>
+
+          <div class="body__data">
+            <p class="body__data--title">Fullname:</p>
+            <p class="body__data--text">Andrea Rios</p>
+            <img src="/assets/edit-icon.png" alt="Edit icon" class="edit-icon">
+          </div>
+
+          <div class="body__data">
+            <p class="body__data--title">Department:</p>
+            <p class="body__data--text">Industry</p>
+            <img src="/assets/edit-icon.png" alt="Edit icon" class="edit-icon">
+          </div>
+
+          <div class="body__data">
+            <p class="body__data--title">Position:</p>
+            <p class="body__data--text">UI/UX</p>
+            <img src="/assets/edit-icon.png" alt="Edit icon" class="edit-icon">
+          </div>
+
+          <div class="body__data">
+            <p class="body__data--title">Password:</p>
+            <p class="body__data--text">982345</p>
+            <img src="/assets/edit-icon.png" alt="Edit icon" class="edit-icon">
+          </div>
+
+          <div class="body__data">
+            <p class="body__data--title">Entry date:</p>
+            <p class="body__data--text">09/07/2003</p>
+            <img src="/assets/edit-icon.png" alt="Edit icon" class="edit-icon">
+          </div>
+
+          <div class="body__data">
+            <p class="body__data--title">Modification date:</p>
+            <p class="body__data--text">09/07/2003</p>
+            <img src="/assets/edit-icon.png" alt="Edit icon" class="edit-icon">
+          </div>
+
+          <div class="body__data">
+            <p class="body__data--title">Status:</p>
+            <p class="body__data--text">Active</p>
+            <img src="/assets/edit-icon.png" alt="Edit icon" class="edit-icon">
+          </div>
+        </div>
       </div>
     </section>
     <section class="add__container" id="add__container">
@@ -99,6 +146,6 @@
       <li><a href="#">Policy and privacity</a></li>
     </ul>
   </footer>
-  <script src="./index.js"></script>
+  <script src="/scripts/admin_dash.js"></script>
 </body>
 </html>

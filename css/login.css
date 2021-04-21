@@ -126,7 +126,7 @@ main figure {
   font-weight: 300;
 }
 
-.login-form input[type="submit"] {
+#submit {
   width: 50%;
   height: 35px;
   font-size: 14px;
@@ -140,7 +140,7 @@ main figure {
   cursor: pointer;
 }
 
-.login-form input[type="submit"]:hover {
+#submit:hover {
   background-color: white;
   color: #008cff;
   border: 1px solid #008cff;

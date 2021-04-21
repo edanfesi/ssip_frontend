@@ -20,7 +20,7 @@
   position: relative;
   margin-left: 10px;
 }
-figure .employee--active {
+figure .is-active {
   position: absolute;
   bottom: 6px;
   right: 3px;
@@ -28,6 +28,9 @@ figure .employee--active {
   height: 10px;
   border-radius: 50%;
   background-color: $success;
+}
+figure .is-offline {
+  display: none;
 }
 .employee__left figure img {
   width: 50px;
@@ -54,4 +57,7 @@ figure .employee--active {
 }
 .employee--card a:hover {
   text-decoration: underline;
+}
+.filter {
+  display: none;
 }
