@@ -15,10 +15,6 @@ const Home = () => {
             <p>Password</p>
             <input type="password" id="password" placeholder="Password" required>
           </label>
-          <label for="forgot-pass" class="login__remember">
-            <input type="checkbox">
-            <span>Remember this device</span>
-          </label>
         </form>
         <button class="login--submit" id="submit">Log in</button>
       </section>
