@@ -2,7 +2,7 @@ const SsipResource = module.exports;
 
 const axios = require('axios');
 
-const BASE_URL = 'http://ssip-backend.herokuapp.com/api/ssip';
+const BASE_URL = 'https://ssip-backend.herokuapp.com/api/ssip';
 
 SsipResource.getAllUsers = async () => {
     const url = `${BASE_URL}/user`;
@@ -69,6 +69,18 @@ SsipResource.loginUser = async (userAuth) => {
 
     try {
         const response = await axios.post(url, userAuth);
+
+        return response;
+    } catch (error) {
+        console.log('fetch error', error);
+    }
+};
+
+SsipResource.twoFactor = async (userAuth, headers) => {
+    const url = `${BASE_URL}/user/2fa`;
+
+    try {
+        const response = await axios.post(url, userAuth, { headers });
 
         return response;
     } catch (error) {
