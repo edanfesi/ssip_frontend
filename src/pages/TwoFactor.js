@@ -15,7 +15,7 @@ const TwoFactor = () => {
         </form>
         <p>Didn't recieve code? <a href="#">Request code again.</a></p>
       </div>
-      <input type="submit" value="Verify" form="phone_form">
+      <input type="submit" value="Verify" form="phone_form" id="two-factor-submit">
     </div>
   </div>
   `

@@ -6,8 +6,9 @@ const getHash = () =>
     || '/';
 
 const resolveRoute = (hash) => {
+    console.log(hash)
     if (hash.length <= 3) {
-        const route = hash === '/' ? hash : '/:id';
+        const route = hash === '/' ? hash : hash === "2fa" ? `/2fa` : "/:id";
         return route; 
     }
 
