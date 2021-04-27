@@ -1,0 +1,18 @@
+//resets
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: roboto, sans-serif;
+  background-color: #f0f0f0;
+}
+
+@import "./layout/header";
+@import "./layout/main/header_user";
+@import "./layout/main/search";
+@import "./layout/main/employees";
+@import "./layout/main/information";
+@import "./layout/main/add_employee";
