@@ -1,0 +1,32 @@
+{
+  "name": "ssip_frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "start": "webpack serve --open --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edanfesi/ssip_frontend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edanfesi/ssip_frontend/issues"
+  },
+  "homepage": "https://github.com/edanfesi/ssip_frontend#readme",
+  "devDependencies": {
+    "@babel/core": "^7.13.16",
+    "babel-loader": "^8.2.2",
+    "html-webpack-plugin": "^5.3.1",
+    "webpack": "^5.35.1",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
+}

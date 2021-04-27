@@ -5,3 +5,5 @@ assets
 *.jpg
 *.jpg
 *.svg
+
+node_modules
