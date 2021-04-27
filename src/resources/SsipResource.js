@@ -76,6 +76,18 @@ SsipResource.loginUser = async (userAuth) => {
     }
 };
 
+SsipResource.twoFactor = async (userAuth, headers) => {
+    const url = `${BASE_URL}/user/2fa`;
+
+    try {
+        const response = await axios.post(url, userAuth, { headers });
+
+        return response;
+    } catch (error) {
+        console.log('fetch error', error);
+    }
+};
+
 SsipResource.logoutUser = async () => {
     const url = `${BASE_URL}/user/logout`;
 

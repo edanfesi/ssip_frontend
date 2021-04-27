@@ -3,6 +3,8 @@
 @import "./scss/libs/typography";
 
 //paginas en mobile
+@import "./scss/templates/header";
+@import "./scss/templates/footer";
 @import "./scss/admin_dash/admin";
 @import "./scss/employee_dash/employee_dash";
 @import "./scss/login/login";

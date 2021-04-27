@@ -4,24 +4,19 @@ footer {
   height: 10vh;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   font-size: $mobile-body-font-size;
   background-color: $footer-color;
   margin: 0 auto;
 }
 footer > p {
   color: white;
-  margin-bottom: 10px;
 }
 footer ul li {
   display: inline-block;
 }
-footer ul li a {
+footer ul li p {
   font-size: $mobile-body-font-size;
   text-decoration: none;
   color: white;
   margin-left: 10px;
-}
-footer ul li a:hover {
-  text-decoration: underline;
 }
