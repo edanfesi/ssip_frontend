@@ -1,0 +1,9 @@
+//colores y tipografias
+@import "./scss/libs/colors";
+@import "./scss/libs/typography";
+
+//paginas en mobile
+@import "./scss/admin_dash/admin";
+@import "./scss/employee_dash/employee_dash";
+@import "./scss/login/login";
+@import "./scss/two_factor_aut/two_factor";

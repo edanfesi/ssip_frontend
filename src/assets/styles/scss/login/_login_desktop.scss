@@ -1,0 +1,56 @@
+
+.login {
+  height: 65vh;
+  padding: 0px 30px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+.logo {
+  width: 60px;
+  margin: 10px;
+}
+.login--title {
+  font-size: $desktop-xlarge-font-size;
+  margin-bottom: 15px;
+}
+.login--text {
+  font-size: $desktop-medium-font-size;
+}
+.login__card p {
+  font-size: $desktop-medium-font-size;
+  font-weight: $desktop-xlarge-font-weight;
+}
+.login__card, .login__remember {
+  margin-bottom: 30px;
+}
+.login__card input {
+  height: 60px;
+}
+.login__remember input {
+  width: 20px;
+  height: 20px;
+}
+
+.login__card:nth-child(2) {
+  margin-bottom: 20px;
+}
+.login__remember span {
+  font-size: $desktop-small-font-size;
+}
+
+.login-form input[type="submit"] {
+  height: 40px;
+  font-size: $desktop-medium-font-size;
+  margin-bottom: 10px;
+}
+
+.login-form a {
+  font-size: $desktop-medium-font-size;
+}
+footer {
+  justify-content: flex-start;
+}
+footer ul li a {
+  font-size: $desktop-medium-font-size;
+  margin-left: 20px;
+}

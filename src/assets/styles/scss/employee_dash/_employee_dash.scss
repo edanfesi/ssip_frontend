@@ -1,0 +1,59 @@
+
+#header {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+.logo {
+  margin: 10px;
+  width: 40px;
+  height: 34.89px;
+}
+
+.header__user {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.header__user figure img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+.header__user__body {
+  margin-top: 5px;
+  text-align: center;
+}
+.header__user__body h2 {
+  font-size: $mobile-large-font-size;
+}
+.header__user__body p {
+  font-size: $mobile-medium-font-size;
+  font-weight: $mobile-small-font-weight;
+}
+
+.logged-in {
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 70vh;
+}
+.logged-in img {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 20px;
+}
+.logged-in--title {
+  font-size: $mobile-large-font-size;
+  margin-bottom: 5px;
+}
+.logged-in--time {
+  font-size: $mobile-medium-font-size;
+}
