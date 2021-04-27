@@ -1,8 +1,6 @@
 const Header = () => {
     const view = `
-        <div class="Header-main">
-            Header
-        <div>
+        <img src="https://i.ibb.co/KyLvN5X/Logo-ssip.png" alt="Logo ssip" class="logo">
     `;
 
     return view;

@@ -3,8 +3,8 @@ const Footer = () => {
     <footer>
       <p>Designed by:</p>
       <ul class="footer-nav">
-        <li><a href="#">Sebas rivera</a></li>
-        <li><a href="#">Edward Antonio</a></li>
+        <li><p href="#">Sebas rivera</p></li>
+        <li><p href="#">Edward Antonio</p></li>
       </ul>
     </footer>
   `
