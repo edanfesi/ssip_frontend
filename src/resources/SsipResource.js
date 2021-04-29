@@ -29,10 +29,10 @@ SsipResource.getUserById = async (userId) => {
 };
 
 SsipResource.createUser = async (userData) => {
-    const url = `${BASE_URL}/user`;
+    const url = `${BASE_URL}/user/new`;
 
     try {
-        const response = await axios.put(url, userData);
+        const response = await axios.post(url, userData);
 
         return response;
     } catch (error) {
@@ -51,6 +51,7 @@ SsipResource.updateUser = async (userId, userData) => {
         console.log('fetch error', error);
     }
 };
+
 
 SsipResource.deleteUserById = async (userId) => {
     const url = `${BASE_URL}/user/${userId}`;

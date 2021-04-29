@@ -13,7 +13,7 @@ const TwoFactor = () => {
           <input type="text" maxlength="1" title="Agrega el codigo" required id="input-token-4">
         </form>
       </div>
-      <input type="button" value="Verify" form="phone_form" id="two-factor-submit">
+      <button form="phone_form" id="two-factor-submit">Verify</button>
     </div>
   </div>
   `

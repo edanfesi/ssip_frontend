@@ -1,4 +1,7 @@
-
+.main-employee {
+  width: 100%;
+  min-height: 90vh;
+}
 .logo {
   width: 80px;
   height: 50px;
@@ -6,7 +9,7 @@
 .header__user {
   position: absolute;
   top: 50%;
-  left: 35%;
+  left: 30%;
   transform: translate(-50%, -50%);
 }
 .header__user .header__user--profile {
@@ -51,8 +54,5 @@
   font-size: $desktop-medium-font-size;
 }
 .logged-in--time {
-  font-size: $desktop-medium-font-size;
-}
-footer ul li a {
   font-size: $desktop-medium-font-size;
 }

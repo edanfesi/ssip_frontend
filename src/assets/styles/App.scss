@@ -9,3 +9,9 @@
 @import "./scss/employee_dash/employee_dash";
 @import "./scss/login/login";
 @import "./scss/two_factor_aut/two_factor";
+
+$breakpoint-desktop: 1024px;
+
+@media (min-width: $breakpoint-desktop) {
+  @import "./App_desktop.scss"
+}

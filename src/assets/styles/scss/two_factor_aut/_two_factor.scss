@@ -68,7 +68,7 @@
 .two-factor__input a:hover {
   text-decoration: underline;
 }
-.two-factor input[type="submit"] {
+.two-factor button {
   width: 150px;
   height: 40px;
   border: none;
@@ -78,11 +78,11 @@
   border-radius: 20px;
   cursor: pointer;
 }
-.two-factor input[type="submit"]:hover {
+.two-factor button:hover {
   background-color: white;
   color: $principal-color;
   border: 1px solid $principal-color;
 }
-.two-factor input[type="submit"]:focus {
+.two-factor button:focus {
   border: 1px solid black;
 }

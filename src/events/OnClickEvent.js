@@ -15,10 +15,8 @@ async function LoginUser() {
 
         if (response.status == 204) {
             window.localStorage.setItem("username", inputUsername.value);
-            location.href = `${window.location.origin}/#/2fa`; 
+            location.href = `${window.location.origin}/#/2fa`;
         }
-
-        // print message
     }
 }
 
@@ -33,12 +31,81 @@ async function TwoFactorAuth() {
         const token = inputToken1.value + inputToken2.value + inputToken3.value + inputToken4.value;
         const response = await SsipResource.twoFactor({ token }, { "AUTH-USER": localStorage.getItem("username") })
         console.log(JSON.stringify(response));
-
         if (response.status == 200) {
-            console.log(response.data[0])
-            location.href = `${window.location.origin}/#/${response.data[0].id}`;
+            console.log(response.data)
+            location.href = `${window.location.origin}/#/${response.data.id}`;
         }
     }
 }
 
-export { LoginUser, TwoFactorAuth };
+
+function Temporizador(id, inicio, final){
+    this.id = id;
+    this.inicio = inicio;
+    this.final = final;
+    this.contador = this.inicio;
+
+    this.conteoSegundos = function(){
+        if (this.contador == this.final){
+            SsipResource.logoutUser()
+        return;
+        }
+
+        document.getElementById(this.id).innerHTML = this.contador--;
+        setTimeout(this.conteoSegundos.bind(this), 1000);
+    };
+}
+
+async function openAdd () {
+    const add = document.getElementById("add");
+    const addC = document.getElementById("add__container");
+    addC.style.opacity = "1"
+    addC.style.visibility = "visible"
+    add.classList.toggle("add-close")
+}
+async function closeAdd () {
+    const addC = document.getElementById("add__container");
+    add.classList.toggle("add-close")
+    setTimeout(() => {
+        addC.style.opacity = "0"
+        addC.style.visibility = "hidden"
+    }, 600)
+}
+async function addNewEmployee () {
+    const addC = document.getElementById("add__container");
+    const dataAddNode = document.querySelectorAll("#add_form input")
+    const dataAdd = [...dataAddNode]
+
+    const response = await SsipResource.createUser({
+        "name": dataAdd[0],
+        "last_name": dataAdd[1],
+        "department": dataAdd[2],
+        "work_position": dataAdd[3],
+        "username": undefined,
+        "password": dataAdd[4],
+        "email": dataAdd[5],
+        "role_id": 2
+    })
+    console.log(response)
+
+    setTimeout(() => {
+        addC.style.opacity = "0"
+        addC.style.visibility = "hidden"
+    }, 600)
+}
+
+function searchFilters(input, selector) {
+    document.addEventListener("keyup", e => {
+        if(e.target.matches(input)) {
+            document.querySelectorAll(selector).forEach((el) =>
+            el.textContent.toUpperCase().includes(e.target.value) || el.textContent.toLowerCase().includes(e.target.value)
+            ? el.parentNode.parentNode.parentNode.classList.remove("filter")
+            : el.parentNode.parentNode.parentNode.classList.add("filter")
+            );
+        }
+    });
+}
+
+
+
+export { LoginUser, TwoFactorAuth, Temporizador, openAdd, closeAdd, addNewEmployee, searchFilters };
