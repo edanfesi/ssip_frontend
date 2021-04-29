@@ -2,7 +2,7 @@ const Employee = (userData = {}) => {
   console.log("Soy un employee", JSON.stringify(userData)); 
   const view = `
   <div class="main-employee">
-    <section class="header__user">
+    <section class="header__user--employee">
       <figure>
         <img src="https://i.ibb.co/mC1fY21/user-icon.png" class="header__user--profile" alt="Employee picture">
       </figure>

@@ -1,6 +1,7 @@
 import Error404 from './Error404';
 import Admin from './Admin';
 import Employee from './Employee';
+import User from "./User";
 
 const SsipResource = require('../resources/SsipResource');
 

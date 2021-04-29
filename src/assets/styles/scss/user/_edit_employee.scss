@@ -1,4 +1,4 @@
-.add__container {
+.edit__container {
   opacity: 0;
   visibility: hidden;
   display: flex;
@@ -12,7 +12,7 @@
   width: 100%;
   height: 100%;
 }
-.add {
+.edit {
   position: relative;
   width: 95%;
   height: auto;
@@ -22,7 +22,7 @@
   transition: transform 1s;
   transform: translateY( 0%);
 }
-.add-close{
+.edit-close {
   transform: translateY(-200%);
 }
 
@@ -38,16 +38,16 @@
   left: 15px;
   cursor: pointer;
 }
-.add > h2 {
+.edit > h2 {
   font-size: $mobile-large-font-size;
   margin-top: 45px;
   margin-left: 10px;
 }
-.add_form {
+.edit_form {
   width: 100%;
   padding: 10px;
 }
-.add_form div {
+.edit_form div {
   display: flex;
   flex-direction: column;
   width: 80%;
@@ -58,23 +58,26 @@
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
   margin-bottom: 20px;
 }
-.add_form div {
+.edit_form div {
   margin: 15px auto;
 }
-.add_form div label {
+.edit_form div:last-child {
+  margin-bottom: 45px;
+}
+.edit_form div label {
   font-size: $mobile-body-font-size;
   font-weight: $mobile-xlarge-font-weight;
 }
-.add_form div input {
+.edit_form div input {
   width: 100%;
   height: 20px;
   border: none;
   outline: none;
 }
-.add_form div input:focus {
+.edit_form div input:focus {
   border-bottom: 1px solid $principal-color;
 }
-.add_form button {
+.edit_form button {
   width: 70px;
   height: 25px;
   padding: 5px;
@@ -86,4 +89,17 @@
   text-align: center;
   border-radius: 10px;
   border: none;
+}
+.btn-edit {
+  position: relative;
+  width: 100px;
+  height: 30px;
+  border: none;
+  outline: none;
+  background-color: $principal-color;
+  border-radius: 20px;
+  color: white;
+  bottom: 10;
+  right: 10;
+  margin: 10px;
 }

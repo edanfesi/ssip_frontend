@@ -7,6 +7,7 @@ const routes = {
     '/': Home,
     '/:id': UserDetail,
     '/2fa': TwoFactor,
+    '/:id/detail': User,
 };
 
 export default routes;

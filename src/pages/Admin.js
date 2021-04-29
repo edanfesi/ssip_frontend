@@ -5,7 +5,6 @@ const Admin = async (userData = {}) => {
 
   const responseUserList = await SsipResource.getAllUsers()
   const userList = responseUserList.data.filter((user) => user.id != userData.id);
-  console.log(userList);
 
   const view = `
   <div class="main-admin">
@@ -42,7 +41,7 @@ const Admin = async (userData = {}) => {
               <p class="employee__info--position">${user.work_position}</p>
             </div>
           </div>
-          <a href="/#/${user.id}" class="view" id="view-information">View</a>
+          <a href="/#/${user.id}/detail" class="view" id="view-information">View</a>
         </div>
       `).join('')}
     </section>
@@ -80,8 +79,8 @@ const Admin = async (userData = {}) => {
             <label for="email">Email</label>
             <input type="text" class="email_input" id="email" placeholder="Email..." name="email">
           </div>
-          <button type="submit" class="btn-add" id="btn-add">Add</button>
         </form>
+        <button class="btn-add" id="btn-add">Add</button>
       </div>
     </section>
   </div>

@@ -48,6 +48,7 @@ function Temporizador(id, inicio, final){
     this.conteoSegundos = function(){
         if (this.contador == this.final){
             SsipResource.logoutUser()
+            location.href = `${window.location.origin}`
         return;
         }
 
@@ -71,22 +72,44 @@ async function closeAdd () {
         addC.style.visibility = "hidden"
     }, 600)
 }
+
+function openEdit () {
+    const edit = document.getElementById("edit");
+    const editC = document.getElementById("edit__container");
+    editC.style.opacity = "1"
+    editC.style.visibility = "visible"
+    edit.classList.toggle("edit-close")
+}
+async function closeEdit () {
+    const edit = document.getElementById("edit");
+    const editC = document.getElementById("edit__container");
+    edit.classList.toggle("edit-close")
+    setTimeout(() => {
+        editC.style.opacity = "0"
+        editC.style.visibility = "hidden"
+    }, 600)
+}
 async function addNewEmployee () {
     const addC = document.getElementById("add__container");
-    const dataAddNode = document.querySelectorAll("#add_form input")
-    const dataAdd = [...dataAddNode]
+    const addForm = document.getElementById("add_form")
+    const formDataAdd = new FormData(addForm)
+    const employeeId = 2;
+    const country = "col"
+
 
     const response = await SsipResource.createUser({
-        "name": dataAdd[0],
-        "last_name": dataAdd[1],
-        "department": dataAdd[2],
-        "work_position": dataAdd[3],
-        "username": undefined,
-        "password": dataAdd[4],
-        "email": dataAdd[5],
-        "role_id": 2
+        name: formDataAdd.get('name'),
+        last_name: formDataAdd.get('last_name'),
+        country: country,
+        department: formDataAdd.get('department'),
+        work_position: formDataAdd.get('work_position'),
+        username: `${formDataAdd.get('name')}.${formDataAdd.get('last_name')}`,
+        password: formDataAdd.get('pass'),
+        email: formDataAdd.get('email'),
+        role_id: employeeId
     })
-    console.log(response)
+
+    console.log(JSON.stringify(response))
 
     setTimeout(() => {
         addC.style.opacity = "0"
@@ -106,6 +129,40 @@ function searchFilters(input, selector) {
     });
 }
 
+async function deleteUser () {
+    const id = location.hash.slice(1).toLocaleLowerCase().split('/')[1];
+    const response = await SsipResource.deleteUserById(id)
+    console.log(response)
+    window.history.back()
+
+}
+
+async function editEmployee () {
+    const editC = document.getElementById("edit__container");
+    const editForm = document.getElementById("edit_form")
+    const formDataEdit = new FormData(editForm)
+    const id = location.hash.slice(1).toLocaleLowerCase().split('/')[1];
+
+    const response = await SsipResource.updateUser(id, {
+        name: formDataEdit.get('name'),
+        last_name: formDataEdit.get('last_name'),
+        department: formDataEdit.get('department'),
+        work_position: formDataEdit.get('work_position'),
+        email: formDataEdit.get('email')
+    })
+    console.log(response)
+
+    setTimeout(() => {
+    editC.style.opacity = "0"
+    editC.style.visibility = "hidden"
+    }, 600)
+}
+
+async function logOut () {
+    const response = await SsipResource.logoutUser()
+    console.log(response)
+}
 
 
-export { LoginUser, TwoFactorAuth, Temporizador, openAdd, closeAdd, addNewEmployee, searchFilters };
+
+export { LoginUser, TwoFactorAuth, Temporizador, openAdd, closeAdd, addNewEmployee, searchFilters, openEdit, closeEdit, deleteUser, editEmployee, logOut };

@@ -1,7 +1,7 @@
 import Header from '../templates/Header';
 
 import { toRender } from '../utils/RouterUtils';
-import { LoginUser, TwoFactorAuth, Temporizador, openAdd, closeAdd, addNewEmployee, searchFilters  } from '../events/OnClickEvent';
+import { LoginUser, TwoFactorAuth, Temporizador, openAdd, closeAdd, addNewEmployee, searchFilters, openEdit, closeEdit, deleteUser, editEmployee, logOut  } from '../events/OnClickEvent';
 
 import Footer from "../templates/Footer"
 
@@ -24,10 +24,7 @@ async function addEventToElement() {
     const twoFactorAuthBtn = document.getElementById('two-factor-submit') || {};
     twoFactorAuthBtn.onclick = TwoFactorAuth;
 
-    if(location.hash.slice(1).toLocaleLowerCase().split('/')[1] == 2 ) {
-        let temporizador = new Temporizador('temporizador', 40, 0);
-        temporizador.conteoSegundos();
-    } else if (location.hash.slice(1).toLocaleLowerCase().split('/')[1] == 1) {
+    if (location.hash.slice(1).toLocaleLowerCase().split('/')[1] == 1) {
         searchFilters(".inputSearch", ".employee__info--name")
 
         const openAddFigure = document.getElementById('add-employee') || {};
@@ -40,7 +37,25 @@ async function addEventToElement() {
         addEmployee.onclick = addNewEmployee;
     }
 
+    let temporizador = new Temporizador('temporizador', 10, 0);
+    temporizador.conteoSegundos();
+
+
+    const deleteEmployeeButton = document.getElementById('delete-button') || {}
+    deleteEmployeeButton.onclick = deleteUser;
+
+    const openEditdiv = document.getElementById('edit-div') || {};
+    openEditdiv.onclick = openEdit;
+
+    const closeEditdiv = document.getElementById("close-edit") || {};
+    closeEditdiv.onclick = closeEdit;
+
+    const confirmEdit = document.getElementById("btn-edit") || {};
+    confirmEdit.onclick = editEmployee;
+
+
 }
+
 
 
 export default router;
