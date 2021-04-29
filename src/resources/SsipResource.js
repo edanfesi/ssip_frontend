@@ -2,7 +2,7 @@ const SsipResource = module.exports;
 
 const axios = require('axios');
 
-const BASE_URL = 'http://ssip-backend.herokuapp.com/api/ssip';
+const BASE_URL = 'https://ssip-backend.herokuapp.com/api/ssip';
 
 SsipResource.getAllUsers = async () => {
     const url = `${BASE_URL}/user`;

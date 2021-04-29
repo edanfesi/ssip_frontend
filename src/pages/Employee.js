@@ -21,7 +21,6 @@ const Employee = (userData = {}) => {
       <p class="logged-in--time" id="temporizador">40</p>
     </section>
   </div>`
-
   return view;
 };
 

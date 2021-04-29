@@ -37,8 +37,11 @@ async function addEventToElement() {
         addEmployee.onclick = addNewEmployee;
     }
 
-    let temporizador = new Temporizador('temporizador', 10, 0);
-    temporizador.conteoSegundos();
+    if (location.hash.slice(1).toLocaleLowerCase().split('/')[1] > 1 & location.hash.slice(1).toLocaleLowerCase().split('/').includes('detail') == false) {
+        let temporizador = new Temporizador('temporizador', 40, 0);
+        temporizador.conteoSegundos();
+    }
+
 
 
     const deleteEmployeeButton = document.getElementById('delete-button') || {}

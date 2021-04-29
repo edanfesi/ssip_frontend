@@ -1,0 +1,160 @@
+/* -------------------- *\
+|        $DESKTOP        |
+\* -------------------- */
+/*-----Display x large*/
+/*-----Display large*/
+/*-----Display medium*/
+/*-----Display small*/
+/*-----Button*/
+/*-----Body*/
+/* -------------------- *\
+|        $MOBILE         |
+\* -------------------- */
+/*-----Display x large*/
+/*-----Display large*/
+/*-----Display medium*/
+/*-----Display small*/
+/*-----Button*/
+/*-----Body*/
+.main-employee {
+  width: 100%;
+  min-height: 90vh;
+}
+
+.logo {
+  width: 80px;
+  height: 50px;
+}
+
+.header__user--employee {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.header__user .header__user--profile {
+  width: 200px;
+  height: 200px;
+}
+
+.header__user__body h2 {
+  font-size: 26px;
+}
+
+.header__user__body p {
+  font-size: 21px;
+}
+
+.header__user--icons figure {
+  padding: 6px;
+  width: 40px;
+  height: 40px;
+}
+
+.header__user--icons figure img {
+  width: 30px;
+  height: 30px;
+}
+
+.logged-in {
+  position: absolute;
+  top: 50%;
+  left: 65%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 400px;
+  height: 400px;
+  padding: 30px 30px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.logged-in img {
+  width: 160px;
+  height: 160px;
+}
+
+.logged-in--title {
+  font-size: 26px;
+  margin-bottom: 5px;
+}
+
+.logged-in--text {
+  font-size: 21px;
+}
+
+.logged-in--time {
+  font-size: 21px;
+}
+
+.login {
+  height: 65vh;
+  padding: 0px 30px;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+
+.logo {
+  width: 60px;
+  margin: 10px;
+}
+
+.login--title {
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+
+.login--text {
+  font-size: 21px;
+}
+
+.login__card p {
+  font-size: 21px;
+  font-weight: 600;
+}
+
+.login__card, .login__remember {
+  margin-bottom: 30px;
+}
+
+.login__card input {
+  height: 60px;
+}
+
+.login__remember input {
+  width: 20px;
+  height: 20px;
+}
+
+.login__card:nth-child(2) {
+  margin-bottom: 20px;
+}
+
+.login__remember span {
+  font-size: 16px;
+}
+
+.login-form input[type="submit"] {
+  height: 40px;
+  font-size: 21px;
+  margin-bottom: 10px;
+}
+
+.login-form a {
+  font-size: 21px;
+}
+
+footer {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer ul li a {
+  font-size: 21px;
+  margin-left: 20px;
+}
+/*# sourceMappingURL=App_desktop.css.map */
