@@ -1,5 +1,7 @@
 const SsipResource = require('../resources/SsipResource');
 
+const locationhref = window.location.origin.includes('localhost') ? window.location.origin : `${window.location.origin}/ssip_frontend`
+
 async function LoginUser() {
     const inputUsername = document.getElementById('username') || null;
     const inputPassword = document.getElementById('password') || null;
@@ -15,7 +17,7 @@ async function LoginUser() {
 
         if (response.status == 204) {
             window.localStorage.setItem("username", inputUsername.value);
-            location.href = `${window.location.origin}/#/2fa`;
+            location.href = `${locationhref}/#/2fa`;
         }
     }
 }
@@ -33,7 +35,7 @@ async function TwoFactorAuth() {
         console.log(JSON.stringify(response));
         if (response.status == 200) {
             console.log(response.data)
-            location.href = `${window.location.origin}/#/${response.data.id}`;
+            location.href = `${locationhref}/#/${response.data.id}`;
         }
     }
 }
@@ -48,7 +50,7 @@ function Temporizador(id, inicio, final){
     this.conteoSegundos = function(){
         if (this.contador == this.final){
             SsipResource.logoutUser()
-            location.href = `${window.location.origin}`
+            location.href = `${locationhref}`
         return;
         }
 
