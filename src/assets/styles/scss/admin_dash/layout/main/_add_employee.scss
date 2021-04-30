@@ -74,11 +74,13 @@
 .add_form div input:focus {
   border-bottom: 1px solid $principal-color;
 }
-.add_form button {
+.btn-add {
   width: 70px;
   height: 25px;
   padding: 5px;
   margin: 0 0 0 auto;
+  margin-bottom: 10px;
+  margin-left: 10px;
   background-color: $principal-color;
   color: white;
   font-size: $mobile-button-font-size;

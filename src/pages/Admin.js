@@ -41,7 +41,7 @@ const Admin = async (userData = {}) => {
               <p class="employee__info--position">${user.work_position}</p>
             </div>
           </div>
-          <a href="/#/${user.id}/detail" class="view" id="view-information">View</a>
+          <a href="/ssip_fontend/#/${user.id}/detail" class="view" id="view-information">View</a>
         </div>
       `).join('')}
     </section>
