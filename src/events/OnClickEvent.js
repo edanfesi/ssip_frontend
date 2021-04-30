@@ -1,6 +1,7 @@
 const SsipResource = require('../resources/SsipResource');
 
 const locationhref = window.location.origin.includes('localhost') ? window.location.origin : `${window.location.origin}/ssip_frontend`
+
 console.log(locationhref)
 
 async function LoginUser() {
